@@ -32,9 +32,6 @@ fun main() {
     println(solution(input, 10))
 }
 
-private data class Coords(val x: Int, val y: Int)
-private data class Move(val x: Int, val y: Int)
-
 private val MOVES: Map<Char, Move> = mapOf(
     'R' to Move(1, 0),
     'D' to Move(0, 1),
@@ -50,11 +47,4 @@ private fun getMove(headCoords: Coords, tailCoords: Coords): Move {
         (headCoords.y - tailCoords.y).sign
     )
     else Move(0, 0)
-}
-
-private fun getNewCoords(startCoords: Coords, move: Move): Coords {
-    return Coords(
-        startCoords.x + move.x,
-        startCoords.y + move.y
-    )
 }
