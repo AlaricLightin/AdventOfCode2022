@@ -1,4 +1,4 @@
-const val SAND_START_X = 500
+private const val SAND_START_X = 500
 
 fun main() {
     fun part1(input: List<String>): Int {

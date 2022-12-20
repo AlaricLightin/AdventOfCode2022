@@ -81,8 +81,8 @@ private fun getSumSizesLess100K(rootDir: Directory): Int {
     return result
 }
 
-const val FULL_SPACE = 70000000
-const val NEED_TO_FREE = 30000000
+private const val FULL_SPACE = 70000000
+private const val NEED_TO_FREE = 30000000
 
 private fun getDeletingDirSize(rootDir: Directory): Int {
     val sizeList = mutableListOf<Int>()

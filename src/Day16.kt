@@ -1,7 +1,7 @@
 import kotlin.math.max
 
-const val TIME_LIMIT_1 = 30
-const val TIME_LIMIT_2 = 26
+private const val TIME_LIMIT_1 = 30
+private const val TIME_LIMIT_2 = 26
 
 fun main() {
     val testInput = readInput("Day16_test")
